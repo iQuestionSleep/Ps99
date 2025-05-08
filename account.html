@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Account Analysis</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+<header><h1>Account</h1>
+<nav><a href="index.html">Home</a></nav></header>
+<main>
+<h2>Account Analysis</h2>
+<canvas id="accountChart" width="400" height="200"></canvas>
+<script>
+const ctx = document.getElementById('accountChart').getContext('2d');
+new Chart(ctx, {
+  type: 'line',
+  data: {
+    labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri'],
+    datasets: [{
+      label: 'Gems Over Time',
+      data: [100, 150, 120, 200, 180],
+      borderColor: '#00ffe1',
+      fill: false,
+    }]
+  },
+  options: {
+    responsive: true,
+    scales: { y: { beginAtZero: true } }
+  }
+});
+</script>
+</main>
+</body>
+</html>

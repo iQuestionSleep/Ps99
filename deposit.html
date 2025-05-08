@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Deposit</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script>
+function generateCode() {
+  const words = ["gold", "dragon", "cube", "pet", "dark", "lucky"];
+  let code = Array.from({length: 4}, () => words[Math.floor(Math.random() * words.length)]).join("-");
+  document.getElementById("codeDisplay").textContent = code;
+}
+</script>
+</head>
+<body>
+<header><h1>Deposit</h1>
+<nav><a href="index.html">Home</a></nav></header>
+<main>
+<h2>Verify Roblox Account</h2>
+<p>Paste the code below into your Roblox profile description:</p>
+<p id="codeDisplay" style="color:#00ffe1"></p>
+<button onclick="generateCode()">Generate Code</button>
+</main>
+</body>
+</html>

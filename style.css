@@ -1,0 +1,48 @@
+
+body {
+  background-color: #0d0d0d;
+  color: #f1f1f1;
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background: #1a1a1a;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav a {
+  margin-left: 20px;
+  color: #ccc;
+  text-decoration: none;
+}
+main {
+  padding: 40px;
+}
+button {
+  padding: 10px 20px;
+  background: #00ffe1;
+  color: #000;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+input, select {
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: none;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+th, td {
+  padding: 10px;
+  border-bottom: 1px solid #333;
+}
